@@ -1,0 +1,54 @@
+<div mat-dialog-title>
+  <h1>User Form</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="contentDiv">
+  <div class="fields">
+    <mat-form-field appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input formControlName="firstName" matInput type="text" placeholder="Enter First Name" />
+    </mat-form-field>
+    <mat-form-field appearace="outline">
+      <mat-label>Last Name</mat-label>
+      <input formControlName="lastName" matInput type="text" placeholder="Enter Last Name" />
+    </mat-form-field>
+  </div>
+
+  <div class="fields">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput type="email" placeholder="abc@gmail.com" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Date Of Birth</mat-label>
+      <input formControlName="dob" matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="fields">
+    <mat-radio-group formControlName="gender" aria-label="Select an option">
+      <mat-label><b>Gender</b></mat-label>
+      <mat-radio-button  value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+      <mat-radio-button value="others">Others</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="fields">
+      <mat-form-field appearance="outline">
+      <mat-label>Role</mat-label>
+      <mat-select formControlName="role">
+        <mat-option *ngFor="let role of roles" [value]=" role">{{role}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-action>
+  <button mat-raised-button type="submit" [mat-dialog-close]="false">{{data?'Update':'Save'}}</button>
+  <button mat-raised-button type="button">Cancel</button>
+</div>
+</form> 

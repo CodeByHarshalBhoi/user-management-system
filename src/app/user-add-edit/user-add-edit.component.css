@@ -1,0 +1,13 @@
+.contentDiv{
+    padding-top: 10px;
+}
+.fields{
+    display: flex;
+    gap: 15px;
+}
+mat-form-field{
+    width: 100%;
+}
+Button {
+    flex: 1;
+}

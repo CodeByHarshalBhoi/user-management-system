@@ -1,0 +1,58 @@
+{
+  "userData": [
+    {
+      "firstName": "TESTER",
+      "lastName": "11",
+      "email": "tester11@gmail.com",
+      "dob": "2024-03-20T18:30:00.000Z",
+      "gender": "female",
+      "role": "Admin",
+      "id": "8c87"
+    },
+    {
+      "id": "f62b",
+      "firstName": "Tester",
+      "lastName": "2",
+      "email": "tester2@gmail.com",
+      "dob": "2024-03-17T18:30:00.000Z",
+      "gender": "male",
+      "role": "Admin"
+    },
+    {
+      "id": "9180",
+      "firstName": "Parth",
+      "lastName": "Patel",
+      "email": "parth@gmail.com",
+      "dob": "2024-03-26T18:30:00.000Z",
+      "gender": "male",
+      "role": "User"
+    },
+    {
+      "id": "b514",
+      "firstName": "Ragini",
+      "lastName": "Sinha",
+      "email": "ragini@gmail.com",
+      "dob": "2024-03-24T18:30:00.000Z",
+      "gender": "male",
+      "role": "Admin"
+    },
+    {
+      "id": "3f1e",
+      "firstName": "test",
+      "lastName": "1",
+      "email": "test@gmail.com",
+      "dob": "2024-03-23T18:30:00.000Z",
+      "gender": "male",
+      "role": "Admin"
+    },
+    {
+      "id": "c0a6",
+      "firstName": "Tester",
+      "lastName": "1",
+      "email": "tester1@gmail.com",
+      "dob": "2024-03-19T18:30:00.000Z",
+      "gender": "male",
+      "role": "User"
+    }
+  ]
+}
